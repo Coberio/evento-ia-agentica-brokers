@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />
+<title>Sponsorship Corredurías · I Foro IA Agéntica 2026</title>
+<meta name="description" content="Participación institucional de corredurías y redes de distribución en el I Foro de IA Agéntica 2026." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Figtree:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" />
+<link rel="stylesheet" href="styles.css" />
+<style>
+  :root {
+    --accent: #a78bfa;
+    --accent-soft: rgba(167, 139, 250, 0.13);
+    --accent-glow: rgba(167, 139, 250, 0.28);
+    --accent-ink: #0f0720;
+    --bg-0: #05070a;
+    --bg-1: #0a0d12;
+  }
+</style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Saltar al contenido</a>
+<div id="root"></div>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script>
+  window.VERTICAL = {
+    key: 'brokers',
+    label: 'Brokers',
+    preTitle: 'Participación Institucional · Corredurías · 2026',
+    tierLabel: 'Corredurías',
+    tierNames: ['IMPULSORA', 'COLABORADORA', 'PARTICIPANTE'],
+    tiers: [
+      { name: 'Entidad Impulsora',     total: 3, remaining: 2, price: 12000 },
+      { name: 'Entidad Colaboradora',  total: 5, remaining: 3, price: 6000  },
+      { name: 'Entidad Participante',  total: 8, remaining: 8, price: 0     }
+    ]
+  };
+</script>
+<script type="text/babel" src="app.jsx"></script>
+<script type="text/babel">
+  const vertical = Object.assign({}, window.VERTICAL, {
+    heroTitle: <>La IA que tus aseguradoras ya están desplegando también puede ser <em>tu mayor ventaja</em>.</>,
+    heroSub: 'El único foro en España donde los máximos responsables de corredurías y redes de distribución debaten el impacto real de los agentes autónomos en gestión de cartera, captación, renovaciones y compliance del mediador. Sin desintermediación — con estrategia. Alta dirección · Regla Chatham House · Aforo curado.'
+  });
+  ReactDOM.createRoot(document.getElementById('root')).render(<Page vertical={vertical} />);
+</script>
+</body>
+</html>
